@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {"SLACK_BOT_TOKEN": "xoxb-8881683875267-8881743542515-Hn8D1o90qTmuOPFVUxXbSHWI", "SLACK_CHANNEL_IDS": "C08RX03T84V", "SLACK_TEAM_ID": "T08RXL3RR7V"}
+    },
+    "Github_agent": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN", "ghcr.io/github/github-mcp-server"],
+      "env": {"GITHUB_PERSONAL_ACCESS_TOKEN": "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"}
+    },
+    "Jira_agent": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "-e", "CONFLUENCE_URL", "-e", "CONFLUENCE_USERNAME", "-e", "CONFLUENCE_API_TOKEN", "-e", "JIRA_URL", "-e", "JIRA_USERNAME", "-e", "JIRA_API_TOKEN", "ghcr.io/sooperset/mcp-atlassian:latest"],
+      "env": {"CONFLUENCE_URL": "https://your-company.atlassian.net/wiki", "CONFLUENCE_USERNAME": "zainulabideen@folio3.com", "CONFLUENCE_API_TOKEN": "", "JIRA_URL": "https://folio3.atlassian.net", "JIRA_USERNAME": "zainulabideen@folio3.com", "JIRA_API_TOKEN": ""}
+    }
+  }
+}

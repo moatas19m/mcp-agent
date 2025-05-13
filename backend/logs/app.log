@@ -1,0 +1,57 @@
+2025-05-13 02:07:41,109 - app.api.endpoints.mcp_agents - INFO - Application startup - registering routes
+2025-05-13 02:07:41,109 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/openapi.json, methods: {'HEAD', 'GET'}
+2025-05-13 02:07:41,109 - app.api.endpoints.mcp_agents - INFO - WebSocket Route: /static
+2025-05-13 02:07:41,110 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/, methods: {'POST'}
+2025-05-13 02:07:41,110 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/, methods: {'GET'}
+2025-05-13 02:07:41,110 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'GET'}
+2025-05-13 02:07:41,111 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'PUT'}
+2025-05-13 02:07:41,111 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'DELETE'}
+2025-05-13 02:07:41,111 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_file_id}/start, methods: {'POST'}
+2025-05-13 02:07:41,111 - app.api.endpoints.mcp_agents - INFO - WebSocket Route: /api/v1/agents/ws/{agent_file_id}
+2025-05-13 02:07:41,111 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/types/{agent_id}, methods: {'GET'}
+2025-05-13 02:07:41,112 - app.api.endpoints.mcp_agents - INFO - Route: /, methods: {'GET'}
+2025-05-13 02:07:41,112 - app.api.endpoints.mcp_agents - INFO - Route: /docs, methods: {'GET'}
+2025-05-13 02:07:46,679 - app.api.endpoints.mcp_agents - INFO - Application startup - registering routes
+2025-05-13 02:07:46,679 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/openapi.json, methods: {'GET', 'HEAD'}
+2025-05-13 02:07:46,679 - app.api.endpoints.mcp_agents - INFO - WebSocket Route: /static
+2025-05-13 02:07:46,679 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/, methods: {'POST'}
+2025-05-13 02:07:46,680 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/, methods: {'GET'}
+2025-05-13 02:07:46,680 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'GET'}
+2025-05-13 02:07:46,680 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'PUT'}
+2025-05-13 02:07:46,680 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'DELETE'}
+2025-05-13 02:07:46,680 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_file_id}/start, methods: {'POST'}
+2025-05-13 02:07:46,680 - app.api.endpoints.mcp_agents - INFO - WebSocket Route: /api/v1/agents/ws/{agent_file_id}
+2025-05-13 02:07:46,680 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/types/{agent_id}, methods: {'GET'}
+2025-05-13 02:07:46,680 - app.api.endpoints.mcp_agents - INFO - Route: /, methods: {'GET'}
+2025-05-13 02:07:46,681 - app.api.endpoints.mcp_agents - INFO - Route: /docs, methods: {'GET'}
+2025-05-13 02:08:05,159 - app.api.endpoints.mcp_agents - INFO - Received message from agent 1: hello
+2025-05-13 02:08:05,159 - app.api.endpoints.mcp_agents - INFO - Processing message with MCP agent 1
+2025-05-13 02:08:25,517 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 02:08:25,614 - app.api.endpoints.mcp_agents - INFO - Got response from agent 1: Hello! How can I assist you today? 😊
+2025-05-13 02:08:25,616 - app.api.endpoints.mcp_agents - INFO - Sent response to client for agent 1
+2025-05-13 02:10:56,360 - app.api.endpoints.mcp_agents - INFO - Application startup - registering routes
+2025-05-13 02:10:56,361 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/openapi.json, methods: {'HEAD', 'GET'}
+2025-05-13 02:10:56,361 - app.api.endpoints.mcp_agents - INFO - WebSocket Route: /static
+2025-05-13 02:10:56,361 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/, methods: {'POST'}
+2025-05-13 02:10:56,361 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/, methods: {'GET'}
+2025-05-13 02:10:56,361 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'GET'}
+2025-05-13 02:10:56,362 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'PUT'}
+2025-05-13 02:10:56,362 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'DELETE'}
+2025-05-13 02:10:56,362 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_file_id}/start, methods: {'POST'}
+2025-05-13 02:10:56,362 - app.api.endpoints.mcp_agents - INFO - WebSocket Route: /api/v1/agents/ws/{agent_file_id}
+2025-05-13 02:10:56,362 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/types/{agent_id}, methods: {'GET'}
+2025-05-13 02:10:56,363 - app.api.endpoints.mcp_agents - INFO - Route: /, methods: {'GET'}
+2025-05-13 02:10:56,363 - app.api.endpoints.mcp_agents - INFO - Route: /docs, methods: {'GET'}
+2025-05-13 03:49:12,422 - app.api.endpoints.mcp_agents - INFO - Application startup - registering routes
+2025-05-13 03:49:12,422 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/openapi.json, methods: {'HEAD', 'GET'}
+2025-05-13 03:49:12,422 - app.api.endpoints.mcp_agents - INFO - WebSocket Route: /static
+2025-05-13 03:49:12,422 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/, methods: {'POST'}
+2025-05-13 03:49:12,422 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/, methods: {'GET'}
+2025-05-13 03:49:12,422 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'GET'}
+2025-05-13 03:49:12,423 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_id}, methods: {'PUT'}
+2025-05-13 03:49:12,423 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_file_id}, methods: {'DELETE'}
+2025-05-13 03:49:12,423 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/{agent_file_id}/start, methods: {'POST'}
+2025-05-13 03:49:12,423 - app.api.endpoints.mcp_agents - INFO - WebSocket Route: /api/v1/agents/ws/{agent_file_id}
+2025-05-13 03:49:12,423 - app.api.endpoints.mcp_agents - INFO - Route: /api/v1/agents/types/{agent_id}, methods: {'GET'}
+2025-05-13 03:49:12,423 - app.api.endpoints.mcp_agents - INFO - Route: /, methods: {'GET'}
+2025-05-13 03:49:12,423 - app.api.endpoints.mcp_agents - INFO - Route: /docs, methods: {'GET'}

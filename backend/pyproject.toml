@@ -1,0 +1,13 @@
+[project]
+name = "agent-dock"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastembed>=0.6.1",
+    "langchain-groq>=0.3.2",
+    "langchain-openai>=0.3.16",
+    "mcp-use>=1.2.9",
+    "python-dotenv>=1.1.0",
+]

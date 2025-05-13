@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "slack",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-slack"
+    ],
+    "env_keys": [
+      "SLACK_BOT_TOKEN",
+      "SLACK_TEAM_ID",
+      "SLACK_CHANNEL_IDS"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "github",
+    "command": "docker",
+    "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+    "env_keys": [
+      "GITHUB_PERSONAL_ACCESS_TOKEN"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "jira",
+    "command": "docker",
+     "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "CONFLUENCE_URL",
+        "-e",
+        "CONFLUENCE_USERNAME",
+        "-e",
+        "CONFLUENCE_API_TOKEN",
+        "-e",
+        "JIRA_URL",
+        "-e",
+        "JIRA_USERNAME",
+        "-e",
+        "JIRA_API_TOKEN",
+        "ghcr.io/sooperset/mcp-atlassian:latest"
+      ],
+    "env_keys": [
+       "CONFLUENCE_URL",
+        "CONFLUENCE_USERNAME",
+        "CONFLUENCE_API_TOKEN",
+        "JIRA_URL",
+        "JIRA_USERNAME",
+        "JIRA_API_TOKEN"
+    ]
+  }
+]

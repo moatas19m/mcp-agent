@@ -56,41 +56,62 @@ The system uses Groq LLM integration via ChatGroq for intelligent agent capabili
 
 - Python 3.11 or higher
 - pip (Python package manager)
+- npm 10.8.2 or higher
+- npx 10.8.2 or higher
 
 ## Installation
 
 1. Clone the repository:
-
-bash
 git clone <repository-url>
 cd mcp-agent
 
+### Backend Setup
 
-2. Create and activate a virtual environment:
+1.  **Navigate to the backend directory:**
+    ```bash
+    cd backend
+    ```
+2.  **Create and activate a Python virtual environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate   # On macOS and Linux
+    ```
+    ```bash
+    .\venv\Scripts\activate  # On Windows
+    ```
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-bash
-python -m venv venv
-source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+4.  **Start the FastAPI server:**
+    ```bash
+    uvicorn app.main:app --reload
+    ```
 
-
-3. Install dependencies:
-
-bash
-pip install -r requirements.txt
-
-
-## Running the Application
-
-1. Start the FastAPI server:
-
-bash
-uvicorn app.main:app --reload
-
-
-2. Access the API documentation at:
-
+Access the API documentation at:
 
 http://localhost:8000/docs
+
+### Frontend Setup
+
+1.  **Open a new terminal and navigate to the frontend directory:**
+    ```bash
+    cd frontend
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the Next.js development server:**
+    ```bash
+    npm run dev
+    ```
+
+    The frontend application will be available at `http://localhost:3000`.
+
 
 
 ## API Endpoints
@@ -110,23 +131,23 @@ http://localhost:8000/docs
 
 ## Example Agent Configuration
 
-json
+```json
 {
-  "name": "slack-agent",
-  "agent_type": "slack",
-  "command": "npx",
-  "args": ["-y", "@modelcontextprotocol/server-slack"],
-  "env": {
-    "SLACK_BOT_TOKEN": "your-token",
-    "SLACK_TEAM_ID": "your-team-id",
-    "SLACK_CHANNEL_IDS": "your-channel-id"
-  }
+    "name": "slack-agent",
+    "agent_type": "slack",
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-slack"],
+    "env": {
+        "SLACK_BOT_TOKEN": "your-token",
+        "SLACK_TEAM_ID": "your-team-id",
+        "SLACK_CHANNEL_IDS": "your-channel-id"
+    }
 }
-
+```
 
 ## Project Structure
 
-
+```
 app/
 ├── api/
 │   └── endpoints/
@@ -142,6 +163,7 @@ app/
 ├── services/
 │   └── mcp_agent_service.py
 └── main.py
+```
 
 
 ## Contributing

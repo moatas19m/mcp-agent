@@ -62,8 +62,10 @@ The system uses Groq LLM integration via ChatGroq for intelligent agent capabili
 ## Installation
 
 1. Clone the repository:
+```bash
 git clone <repository-url>
 cd mcp-agent
+```
 
 ### Backend Setup
 

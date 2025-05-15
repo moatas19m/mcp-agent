@@ -116,7 +116,7 @@ http://localhost:8000/docs
     The frontend application will be available at `http://localhost:3000`.
 
 
-### Arguments for Each Agent:
+### Arguments for Each Agent when asked configuring agent from web:
 - SLACK 
 ```json
     "args": ["-y", "@modelcontextprotocol/server-slack"],

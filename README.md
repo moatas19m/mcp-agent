@@ -121,6 +121,44 @@ http://localhost:8000/docs
 ```json
     "args": ["-y", "@modelcontextprotocol/server-slack"],
 ```
+```json
+    "commands": "npx",
+```
+
+- GITHUB
+```json
+    "args": [
+          "run",
+          "-i",
+          "--rm",
+          "-e",
+          "GITHUB_PERSONAL_ACCESS_TOKEN",
+          "ghcr.io/github/github-mcp-server"
+        ],
+```
+```json
+    "commands": "docker",
+```
+
+- JIRA
+```json
+    "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e", "CONFLUENCE_URL",
+        "-e", "CONFLUENCE_USERNAME",
+        "-e", "CONFLUENCE_API_TOKEN",
+        "-e", "JIRA_URL",
+        "-e", "JIRA_USERNAME",
+        "-e", "JIRA_API_TOKEN",
+        "ghcr.io/sooperset/mcp-atlassian:latest"
+      ],
+```
+```json
+    "commands": "docker",
+```
+
 
 ## API Endpoints
 

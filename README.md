@@ -58,6 +58,7 @@ The system uses Groq LLM integration via ChatGroq for intelligent agent capabili
 - pip (Python package manager)
 - npm 10.8.2 or higher
 - npx 10.8.2 or higher
+- docker
 
 ## Installation
 
@@ -115,6 +116,11 @@ http://localhost:8000/docs
     The frontend application will be available at `http://localhost:3000`.
 
 
+### Arguments for Each Agent:
+- SLACK 
+```json
+    "args": ["-y", "@modelcontextprotocol/server-slack"],
+```
 
 ## API Endpoints
 
@@ -166,15 +172,6 @@ app/
 │   └── mcp_agent_service.py
 └── main.py
 ```
-
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
 
 # Slack Setup for Environment Variables
 

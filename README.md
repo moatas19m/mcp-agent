@@ -74,6 +74,10 @@ cd mcp-agent
     ```bash
     cd backend
     ```
+2. **Create env file**
+    ```json
+    GROQ_API_KEY="Your_Groq_Api_Key"
+    ```
 2.  **Create and activate a Python virtual environment:**
     ```bash
     python -m venv venv
